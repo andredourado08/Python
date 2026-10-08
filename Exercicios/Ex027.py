@@ -2,3 +2,8 @@ print('Faça um programa que leia o nome completo de uma pessoa, mostrando em se
 'Ex: Digite o nome completo: João da Silva' \
 'Primeiro nome: João' \
 'Último nome: Silva')
+
+nome = input('Digite seu nome completo: ').strip()
+nome_separado = nome.split()
+print(f'Primeiro nome: {nome_separado[0]}')
+print(f'Último nome: {nome_separado[-1]}')
